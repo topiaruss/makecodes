@@ -24,13 +24,17 @@ def make(job, fit=False, box=10):
     img.save('%s.png' % title)
 
 work = [
-('http://4pps.net/1', 'Plone CMS'),
-('http://4pps.net/2', 'Mayan EDMS'),
-('http://4pps.net/3', 'Kotti CMS'),
-('http://4pps.net/4', 'ScrumDo'),
-('http://4pps.net/5', 'MediaThread'),
-('http://4pps.net/6', 'KARL'),
-('http://4pps.net/7', 'Askbot'),
-]
+('http://4pps.net/q/1', 'Plone CMS'),
+('http://4pps.net/q/2', 'Mayan EDMS'),
+('http://4pps.net/q/3', 'Kotti CMS'),
+('http://4pps.net/q/4', 'ScrumDo'),
+('http://4pps.net/q/5', 'MediaThread'),
+('http://4pps.net/q/6', 'KARL'),
+
+('http://4pps.net/q/A', 'CMS'),  # Must include Plone and Kotti
+('http://4pps.net/q/B', 'EDMS'),  # Can include Mayan and maybe Plone??
+('http://4pps.net/q/C', 'DevTools'),  # Can include ScrumDo
+('http://4pps.net/q/D', 'Media'),  # Can include MediaThread and EMDS ??
+ ]
 
 [make(i, 1) for i in work]
