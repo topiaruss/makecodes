@@ -30,11 +30,12 @@ work = [
 ('http://4pps.net/q/4', 'ScrumDo'),
 ('http://4pps.net/q/5', 'MediaThread'),
 ('http://4pps.net/q/6', 'KARL'),
+('http://4pps.net/q/7', 'Askbot'),
 
 ('http://4pps.net/q/A', 'CMS'),  # Must include Plone and Kotti
 ('http://4pps.net/q/B', 'EDMS'),  # Can include Mayan and maybe Plone??
 ('http://4pps.net/q/C', 'DevTools'),  # Can include ScrumDo
-('http://4pps.net/q/D', 'Media'),  # Can include MediaThread and EMDS ??
+('http://4pps.net/q/D', 'Media'),  # Can include MediaThread and Mayan ??
  ]
 
 [make(i, 1) for i in work]
