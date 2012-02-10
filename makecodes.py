@@ -24,18 +24,24 @@ def make(job, fit=False, box=10):
     img.save('%s.png' % title)
 
 work = [
-('http://4pps.net/q/1', 'Plone CMS'),
-('http://4pps.net/q/2', 'Mayan EDMS'),
-('http://4pps.net/q/3', 'Kotti CMS'),
-('http://4pps.net/q/4', 'ScrumDo'),
-('http://4pps.net/q/5', 'MediaThread'),
-('http://4pps.net/q/6', 'KARL'),
-('http://4pps.net/q/7', 'Askbot'),
+    ('http://4pps.net/q/1', 'Plone CMS'),
+    ('http://4pps.net/q/2', 'Mayan EDMS'),
+    ('http://4pps.net/q/3', 'Kotti CMS'),
+    ('http://4pps.net/q/4', 'ScrumDo'),
+    ('http://4pps.net/q/5', 'MediaThread'),
 
-('http://4pps.net/q/A', 'CMS'),  # Must include Plone and Kotti
-('http://4pps.net/q/B', 'EDMS'),  # Can include Mayan and maybe Plone??
-('http://4pps.net/q/C', 'DevTools'),  # Can include ScrumDo
-('http://4pps.net/q/D', 'Media'),  # Can include MediaThread and Mayan ??
- ]
+    # not sure about these, yet...
+    ('http://4pps.net/q/6', 'KARL'),
+    ('http://4pps.net/q/7', 'Askbot'),
+    ('http://4pps.net/q/8', 'Mezzanine'),
+    ('http://4pps.net/q/9', 'MiroCommunity'),
+    ('http://4pps.net/q/0', 'Django CMS'),
+
+    # and these are for category comparisons
+    ('http://4pps.net/q/A', 'CMS'),  # Must include Plone, Kotti, DjCMS, if we use it
+    ('http://4pps.net/q/B', 'EDMS'),  # Can include Mayan and maybe Plone??
+    ('http://4pps.net/q/C', 'DevTools'),  # Can include ScrumDo
+    ('http://4pps.net/q/D', 'Media'),  # Can include MediaThread, Mayan, MiroC if used.
+    ]
 
 [make(i, 1) for i in work]
