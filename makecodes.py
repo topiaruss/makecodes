@@ -4,7 +4,9 @@
 #   $ easy_install qrcode
 #   $ easy_install PIL
 #
-# and then run python makecodes.py
+# and then run 
+#
+#   $ python makecodes.py
 #
 # The output files will appear in the same directory where you run the program
 
