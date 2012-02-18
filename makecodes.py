@@ -27,7 +27,7 @@ def make(job, fit=False, box=10):
     )
     qr.add_data(url)
     img = qr.make_image()
-    img.save('%s.png' % title)
+    img.save('%s.pdf' % title)
 
 work = [
     ('http://4pps.net/q/1', 'Plone CMS'),
@@ -40,7 +40,7 @@ work = [
     ('http://4pps.net/q/6', 'KARL'),
     ('http://4pps.net/q/7', 'Askbot'),
     ('http://4pps.net/q/8', 'Mezzanine'),
-    ('http://4pps.net/q/9', 'MiroCommunity'),
+    ('http://4pps.net/q/9', 'Miro Community'),
     ('http://4pps.net/q/0', 'Django CMS'),
 
     # and these are for category comparisons
