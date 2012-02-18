@@ -1,0 +1,38 @@
+WHAT IS THIS?
+=============
+
+Call this a demo of qrcode generation in python.  I used it to create a batch
+of QRcodes for a project. Feel free to modify the list of URLS, and use it for
+your own purpose.
+
+LICENSE?
+========
+
+GPL3, see the top of makecodes.py
+
+INSTALL
+=======
+
+Either 
+
+  $ easy_install qrcode
+  $ easy_install PIL
+
+Or 
+
+  $ virtualenv .
+  $ pip install -r requirements.txt
+
+and then run 
+
+  $ python makecodes.py
+
+Several output .png files will appear in the same directory you ran the program.
+
+If you want another format, you can change 'png' in the line ...
+
+       img.save('%s.png' % title)
+
+to nominate .pdf, or .jpg output format.  Your platform may need support libraries
+to create certain output formats.
+
